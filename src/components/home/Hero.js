@@ -25,7 +25,7 @@ function Hero() {
 
   if (width > limit) {
     return (
-      <section className="hero px-4 flex flex-col items-center justify-center md:px-20 py-20 md:pt-28 b-rounded-bottom overflow-hidden">
+      <section className="hero px-4 flex flex-col items-center justify-center md:px-20 py-20 md:pt-28 b-rounded-bottom overflow-hidden" id="hero">
         <span className="rounded-full bg-gray-800 h-40 w-40 mb-8 overflow-hidden relative flex justify-center items-center object-cover">
           <Image
             className="flex h-full w-full"
@@ -43,9 +43,9 @@ function Hero() {
           user experiences. Bringing creativity and technical expertise to every
           project to ensure your digital presence stands out.
         </div>
-        <span className="px-10 py-3 mt-8 rounded-full bg-white text-black text-opacity-80 text-base font-semibold montserrat-normal transition-all hover:bg-slate-600">
+        <Link href={"#services"} className="px-10 py-3 mt-8 rounded-full bg-white text-black text-opacity-80 text-base font-semibold montserrat-normal transition-all hover:bg-slate-600">
           Explore
-        </span>
+        </Link>
       </section>
     );
   }
@@ -68,7 +68,7 @@ function Hero() {
         Building digital products, enhancing brands, and creating beautiful user
         experiences.
       </div>
-      <Link href="projects" className="px-10 py-3 mt-8 rounded-full bg-white text-black text-opacity-80 text-base font-semibold montserrat-normal flex justify-center items-center transition-all hover:bg-slate-600 cursor-pointer">
+      <Link href="#services" className="px-10 py-3 mt-8 rounded-full bg-white text-black text-opacity-80 text-base font-semibold montserrat-normal flex justify-center items-center transition-all hover:bg-slate-600 cursor-pointer">
         Explore
       </Link>
     </section>

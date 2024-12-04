@@ -16,7 +16,10 @@
   --headerHeight: 7rem;
 }
 
+html{
+  scroll-behavior: smooth;
 
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -129,13 +132,13 @@ main{
 .side-nav{
   display: flex;
   flex-direction: column;
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
   justify-content: start;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   position: fixed;
   height: calc(100svh );
   top: 0;
@@ -262,4 +265,9 @@ radial-gradient(at 26% 100%, hsla(241, 100%, 70%, 0.096) 0px, transparent 50%);
 footer{
   background-color: var(--sectionBG);
   height: 5rem;
+}
+@media (max-width:360px){
+  *{
+    font-size: 4.2vw;
+  }
 }
