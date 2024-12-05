@@ -34,7 +34,7 @@ function Portfolio() {
                 // layout="fill"
                 width={320}
                 height={240}
-                className="rounded-lg "
+                className="rounded-lg"
               ></Image>
             </span>
             <div className="flex justify-center items-center gap-8 w-full h-8 absolute bottom-6 left-0 z-[1]">
