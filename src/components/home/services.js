@@ -19,9 +19,9 @@ function Services() {
         {data.map((service) => (
           <div
             key={service.title}
-            className="flex flex-col w-full sm:w-80  bg-slate-800 rounded-2xl h-96 overflow-hidden p-4"
+            className="flex flex-col w-full sm:w-80  bg-slate-800 rounded-2xl h-96 overflow-hidden px-4 pt-4 pb-6"
           >
-            <span className="relative h-[60%] opacity-80">
+            <span className="relative h-[70%] sm:h-[60%] opacity-80">
               <Image
                 alt={service.title}
                 src={service.illustration}

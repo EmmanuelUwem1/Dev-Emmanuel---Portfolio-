@@ -12,5 +12,6 @@ const socialsData = [
   { title: "Telegram", href: "t.me/emma_de_dev", icon: "/telegram.png" },
   { title: "X", href: "https://x.com/EmmanuelUwem08", icon: "/x.png" },
   { title: "WhatsApp", href: "https://wa.link/beigr0", icon: "/whatsapp.png" },
+  { title: "LinkedIn", href: "https://wa.link/beigr0", icon: "/linkedin.png" },
 ];
 export default socialsData;

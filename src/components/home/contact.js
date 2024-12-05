@@ -17,6 +17,7 @@ function Contact() {
             alt="Handshake"
             src={"/handshake gif.gif"}
             layout="fill"
+            unoptimized
           ></Image>
               </span>
               

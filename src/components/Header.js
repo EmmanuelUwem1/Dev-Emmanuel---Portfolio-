@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Sling as HamburgerSling } from "hamburger-react";
+import HamburgerMenu from "./hamburgerMenu";
 import Nav from "./nav";
 
 function Header() {
@@ -43,21 +43,7 @@ function Header() {
         </div>
       </Link>
       <Nav state={HamMenuIsOpen} onClick={handleNavLinkClick} />
-
-      <div className="relative z-[2500] rounded-md" onClick={HandleHamMenu}>
-        <HamburgerSling
-          size={25}
-          direction="right"
-          duration={0.8}
-          distance="lg"
-          rounded
-          label="Show menu"
-          color="#ffff"
-          easing="ease-in"
-          toggled={HamMenuIsOpen}
-          // toggle={setHamMenu(!HamMenuIsOpen)}
-        />
-      </div>
+      <HamburgerMenu state={HamMenuIsOpen} onClick={handleNavLinkClick} />
     </header>
   );
 }

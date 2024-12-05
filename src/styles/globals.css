@@ -15,6 +15,30 @@
   --text-header: #c9c9c9;
   --headerHeight: 7rem;
 }
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #080046 #02000f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #03001a;
+  /* border-radius: 5px; */
+    border-radius: 2rem;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #03001a;
+  /* border-radius: 14px; */
+  border: 3px solid #03001a;
+  border-radius: 2rem;
+}
 
 html{
   scroll-behavior: smooth;
@@ -270,4 +294,35 @@ footer{
   *{
     font-size: 4.2vw;
   }
+}
+
+.hamburger-menu{
+  transition: all .5s ease;
+}
+.hamburger-menu span{
+  height: 2px;
+  border-radius: 3rem;
+  background-color: white;
+   transition: all .5s ease;
+
+}
+.hamburger-open{
+transform: skewX(45deg);
+
+/* -webkit-transform:rotateX(45deg);
+   -moz-transform:rotateX(45deg);
+   -o-transform:rotateX(45deg);  */
+transition: all .5s ease;
+}
+.project-card{
+transition: all .4s ease;
+}
+.project-card>span{
+transition: all .4s ease;
+
+}
+.project-card:hover.project-card>span{
+height: 70%;
+/* opacity: .8; */
+
 }
