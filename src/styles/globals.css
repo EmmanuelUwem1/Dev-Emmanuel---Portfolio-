@@ -9,12 +9,15 @@
 @tailwind utilities;
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --text-header: #c9c9c9;
-  --headerHeight: 7rem;
-}
+ :root {
+    /* --background: #0e0e0e; */
+    --background:#010008;
+    --background2:#02000f;
+    --foreground: #ededed;
+    --sectionBG: #03001a;
+      --headerHeight: 7rem;
+
+  }
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -45,15 +48,9 @@ html{
 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --background: #0e0e0e; */
-    --background:#010008;
-    --background2:#02000f;
-    --foreground: #ededed;
-    --sectionBG: #03001a;
-  }
-}
+/* @media (prefers-color-scheme: dark) {
+ 
+} */
 
 body {
   color: var(--foreground);
