@@ -12,12 +12,12 @@ function MyStack() {
         {stacks.map((stack) => (
           <div
             key={stack.title}
-            className="flex w-2/5 sm:w-44 flex-col justify-start items-center gap-6 h-44 sm:h-60 bg-slate-900 rounded-md pb-2 opacity-80"
+            className="flex w-2/5 sm:w-44 flex-col justify-start items-center gap-6 h-44 sm:h-60 bg-slate-900 rounded-md pb-2 opacity-90"
           >
             <span className="relative flex  h-[70%] w-full">
               <Image alt={stack.title} src={stack.icon} layout="fill" className="rounded-3xl"></Image>
             </span>
-            <span className="montserrat-normal font-bold text-lg opacity-80">{stack.title}</span>
+            <span className="montserrat-normal font-bold text-lg opacity-85">{stack.title}</span>
           </div>
         ))}
       </div>
