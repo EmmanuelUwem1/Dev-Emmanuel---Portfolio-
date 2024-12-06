@@ -19,7 +19,8 @@ export default function RootLayout({ children }) {
         />
         <meta name="author" content="Emmanuel Uwem" />
         <link rel="icon" href="/favicon.ico" />
-        <title>emma.dev</title>
+        <link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
+        <title>Emma.Dev</title>
       </head>
       <body className="antialiased">
         <Header />
