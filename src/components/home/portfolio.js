@@ -9,7 +9,7 @@ function Portfolio() {
       className="px-4 flex flex-col items-center justify-start md:px-20 py-20 md:pt-28 b-rounded-bottom overflow-hidden relative mesh-gradient"
       id="portfolio"
     >
-      <span className="text-sm montserrat-normal absolute md:top-16 md:left-4 top-8 left-0 -rotate-45 w-32 flex justify-center items-center text-justify border-2 border-transparent rounded-full px-1 py-2 bg-slate-800">
+      <span className="text-sm montserrat-normal md:top-16 md:left-4 top-8 left-0 w-32 flex justify-center items-center text-justify border-2 border-transparent rounded-full px-1 py-2 bg-slate-800">
         Portfolio
       </span>
 
