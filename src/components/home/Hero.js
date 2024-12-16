@@ -46,18 +46,18 @@ function Hero() {
             width={1500}
           />
         </motion.span>
-        <span className="font-audiowide text-4xl sm:text-6xl md:text-7xl cursor-pointer">
+        <span className="">
           {nameToArray.map((text, index) => (
             <motion.span
-              initial={{ opacity: 0}}
-              whileInView={{ opacity: 1}}
-           
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: false }}
               transition={{
                 duration: 0.2,
                 delay: `${index == 0 ? 0.1 : Number(index) / 6}`,
               }}
               key={index}
+              className="font-audiowide text-4xl sm:text-6xl md:text-7xl cursor-pointer"
             >
               {text}
             </motion.span>
