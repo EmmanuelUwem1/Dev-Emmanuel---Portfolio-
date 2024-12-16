@@ -321,7 +321,7 @@ transition: all .4s ease;
 
 }
 .project-card:hover.project-card>span{
-height: 70%;
+height: 40%;
 /* opacity: .8; */
 
 }

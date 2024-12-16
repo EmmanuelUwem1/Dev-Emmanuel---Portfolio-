@@ -1,7 +1,9 @@
+"use client"
 import React from "react";
 import projectsData from "./portfolioData";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from 'framer-motion'
 function Portfolio() {
   const projects = projectsData.slice(0);
   return (
@@ -20,12 +22,16 @@ function Portfolio() {
       </h2>
 
       <div className="flex flex-row gap-6 justify-center items-center h-full w-full mt-28 flex-wrap md:flex-nowrap">
-        {projects.map((project) => (
-          <div
+        {projects.map((project,index) => (
+          <motion.div
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: .5, delay:`${index == 0 ? .2 : (Number(index)/2)}` }}
+            
             target="_blank"
             href={project.href}
             key={project.title}
-            className="project-card flex flex-col   bg-slate-800 rounded-2xl w-fit h-64 overflow-hidden p-4 relative "
+            className="project-card flex flex-col justify-between   bg-slate-800 rounded-2xl w-fit h-64 overflow-hidden p-4 relative "
           >
             <span className="relative h-full bg-slate-800 overflow-hidden rounded-lg z-[200]">
               <Image
@@ -37,6 +43,10 @@ function Portfolio() {
                 className="rounded-lg"
               ></Image>
             </span>
+            <div className="absolute bottom-[30%] flex w-full flex-col gap-1 justify-center items-start">
+              <span className="montserrat-normal font-bold opacity-90 ">{project.title}</span>
+              <span className="montserrat-normal font-normal text-base opacity-80">{ project.description}</span>
+            </div>
             <div className="flex justify-center items-center gap-8 w-full h-8 absolute bottom-6 left-0 z-[1]">
               <a
                 href={project.github}
@@ -53,7 +63,7 @@ function Portfolio() {
                 Live Demo
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="pt-4">

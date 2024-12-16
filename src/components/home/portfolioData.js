@@ -1,6 +1,7 @@
 const projectsData = [
   {
     title: "Fraiche",
+    description: "Sleek UI Restaurant App",
     href: "https://frachemodern.netlify.app/",
     image: "/fraiche.png",
     github: "https://github.com/EmmanuelUwem1/Fraiche-Restaurant-App-",
@@ -13,6 +14,7 @@ const projectsData = [
   // },
   {
     title: "Graphic-Cheff",
+    description: "Graphic-Cheff Portfolio Website",
     href: "https://graphic-cheff.vercel.app/",
     image: "/graphic-cheff.png",
     github: "https://github.com/EmmanuelUwem1/graphic-cheff",
