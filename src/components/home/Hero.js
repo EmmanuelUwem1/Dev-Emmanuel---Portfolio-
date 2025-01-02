@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from 'framer-motion'
-
-
 function Hero() {
+
+
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -57,7 +57,7 @@ function Hero() {
                 delay: `${index == 0 ? 0.1 : Number(index) / 6}`,
               }}
               key={index}
-              className="font-audiowide text-4xl sm:text-6xl md:text-7xl cursor-pointer"
+              className={"font-audiowide text-4xl sm:text-6xl md:text-7xl cursor-pointer"}
             >
               {text}
             </motion.span>

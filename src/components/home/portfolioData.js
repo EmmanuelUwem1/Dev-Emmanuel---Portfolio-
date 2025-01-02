@@ -1,17 +1,17 @@
 const projectsData = [
   {
+    title: "Nuevotek",
+    href: "https://www.nuevotek.ng/",
+    image: "/nuevotek.png",
+    github: "https://github.com/EmmanuelUwem1/nuevotek",
+  },
+  {
     title: "Fraiche",
     description: "Sleek UI Restaurant App",
     href: "https://frachemodern.netlify.app/",
     image: "/fraiche.png",
     github: "https://github.com/EmmanuelUwem1/Fraiche-Restaurant-App-",
   },
-  // {
-  //   title: "Unik",
-  //   href: "https://uniklanding.netlify.app/",
-  //   image: "/unik.png",
-  //   github: "https://github.com/EmmanuelUwem1/unik",
-  // },
   {
     title: "Graphic-Cheff",
     description: "Graphic-Cheff Portfolio Website",
