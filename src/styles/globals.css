@@ -112,7 +112,9 @@ main{
  
 }
 @media (min-width: 400px){
-
+  .transition-width{
+    transition: width .5s ease;
+  }
   header.active{
     background-color: transparent;
     -webkit-backdrop-filter: blur(15px);
