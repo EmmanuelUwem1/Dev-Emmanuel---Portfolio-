@@ -33,7 +33,7 @@ function Header() {
     <header
       className={`${
         scrollTop > 1 ? "active" : ""
-      } flex justify-between items-center px-4 md:px-20 h-20 md:h-28 w-full fixed z-[1000]`}
+      } flex justify-between items-center px-4 md:px-20 h-20 md:h-28 w-full fixed transition-width z-[1000]`}
     >
       <Link href={"/"}>
         <div className="logo">
