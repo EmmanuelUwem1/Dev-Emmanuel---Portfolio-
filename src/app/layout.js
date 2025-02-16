@@ -11,7 +11,7 @@ import {
   Funnel_Display,
   Monoton,
   Turret_Road,
-} from "@next/font/google";
+} from "next/font/google";
 import { useEffect } from "react";
 
 const bungeeHairline = Bungee_Hairline({ subsets: ["latin"], weight: "400" });
