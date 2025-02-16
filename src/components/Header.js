@@ -26,7 +26,7 @@ function Header() {
   }
 
   function handleNavLinkClick() {
-    setHamMenu(!HamMenuIsOpen); // Close the menu when a nav link is clicked
+    setHamMenu(false); // Close the menu when a nav link is clicked
   }
 
   return (
@@ -43,7 +43,7 @@ function Header() {
         </div>
       </Link>
       <Nav state={HamMenuIsOpen} onClick={handleNavLinkClick} />
-      <HamburgerMenu state={HamMenuIsOpen} onClick={handleNavLinkClick} />
+      <HamburgerMenu state={HamMenuIsOpen} onClick={HandleHamMenu} />
     </header>
   );
 }

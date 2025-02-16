@@ -1,6 +1,7 @@
 const projectsData = [
   {
     title: "Nuevotek",
+    description: "Website for Nuevotek Solutions",
     href: "https://www.nuevotek.ng/",
     image: "/nuevotek.png",
     github: "https://github.com/EmmanuelUwem1/nuevotek",

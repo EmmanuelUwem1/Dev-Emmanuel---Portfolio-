@@ -20,12 +20,12 @@ function MyStack() {
         gradient={true}
         gradientColor="#03001a"
         gradientWidth={20}
-        className="flex gap-4 md:gap-6 w-full flex-nowrap justify-center"
+        className="md:gap-6 flex w-full flex-nowrap justify-between"
       >
         {stacks.map((stack) => (
           <div
             key={stack.title}
-            className="flex flex-col justify-start ml-4 items-center gap-6 h-52 w-40 md:h-56 md:w-44 bg-slate-900 rounded-md pb-2 opacity-90"
+            className="flex flex-col justify-start ml-5 items-center gap-6 h-52 w-40 md:h-56 md:w-44 bg-slate-900 rounded-md pb-2 opacity-90"
           >
             <span className="relative flex w-full h-full">
               <Image
