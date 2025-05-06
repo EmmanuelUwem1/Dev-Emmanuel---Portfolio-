@@ -31,7 +31,7 @@ function Portfolio() {
             target="_blank"
             href={project.href}
             key={project.title}
-            className="project-card flex flex-col justify-between   bg-slate-800 rounded-2xl w-fit h-64 overflow-hidden p-4 relative "
+            className="project-card flex flex-col justify-between   card rounded-2xl w-fit h-64 overflow-hidden p-4 relative "
           >
             <span className="relative h-full bg-slate-800 overflow-hidden rounded-lg z-[200]">
               <Image

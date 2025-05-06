@@ -27,27 +27,14 @@ function Hero() {
 
   return (
     <section
-      className="hero px-4 flex flex-col items-center justify-center md:px-20 py-20 md:pt-28 b-rounded-bottom overflow-hidden relative"
+      className="hero px-4 flex flex-col items-center justify-center md:px-20 py-20 md:pt-36 b-rounded-bottom overflow-hidden relative"
       id="hero"
     >
-      <motion.span
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="rounded-full bg-gray-800 h-40 w-40 mb-8 overflow-hidden relative flex justify-center items-center object-cover"
-      >
-        <Image
-          className="flex h-full w-full opacity-90"
-          alt="Emmanuel Uwem"
-          src={"/Emmanuel Uwem Profile Picture.jpg"}
-          // layout="fit"
-          height={200}
-          width={200}
-          objectFit="cover"
-          objectPosition="center"
-          
-        />
-      </motion.span>
+      <div className="flex justify-center items-center gap-2 rounded-full border border-gray-600 font-medium text-green-700 px-3 py-1 my-3 shimmer">
+        {" "}
+        <span className="h-2 w-2 rounded-full bg-green-700 "></span>
+        Available for work
+      </div>
       <span className="">
         {nameToArray.map((text, index) => (
           <motion.span
@@ -60,20 +47,23 @@ function Hero() {
             }}
             key={index}
             className={
-              "font-audiowide text-4xl sm:text-6xl md:text-7xl cursor-pointer"
+              "font-audiowide text-4xl sm:text-5xl md:text-6xl cursor-pointer"
             }
           >
             {text}
           </motion.span>
         ))}
       </span>
-      <div className="text-xl pt-6 opacity-55 w-full text-center md:w-[70%] turret-road-regular montserrat-normal">
+      <div className="flex my-4 justify-center items-center border rounded-2xl px-3 py-2 font-semibold text-xl opacity-90 text-gradient">
+        Frontend Engineer
+      </div>
+      <div className="text-xl opacity-55 w-full text-center md:w-[70%] turret-road-regular montserrat-normal">
         {width > limit
           ? `Building digital products, enhancing brands, and creating beautiful
-          user experiences. Bringing creativity and technical expertise to every
-          project to ensure your digital presence stands out.`
-          : `Building digital products, enhancing brands, and creating beautiful
-          user experiences.`}
+          user experiences. Bringing creativity, precision, and technical excellence to every
+          project.`
+          : `Building digital products, enhancing brands, bringing creativity, precision, and technical excellence to every
+          project.`}
       </div>
       <Link
         href={"#services"}

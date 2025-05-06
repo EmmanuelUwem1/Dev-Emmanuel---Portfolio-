@@ -21,8 +21,8 @@ function Contact() {
           ></Image>
               </span>
               
-              <div className="flex flex-col justify-between items-center bg-slate-900 w-full sm:w-[50%] rounded-lg h-40 pb-8">
-                  <h2 className="flex w-full text-center justify-center items-center py-4 h-fit text-3xl opacity-80 montserrat-normal font-bold text-cyan-600">Reach out to me on</h2>
+              <div className="flex flex-col justify-between items-center card w-full sm:w-[50%] rounded-lg h-40 pb-8">
+                  <h2 className="flex w-full text-center justify-center items-center py-4 h-fit text-3xl opacity-80 montserrat-normal font-bold text-gradient">Reach out to me on</h2>
 
                   <div className="w-2/3"><Socials/></div>
             </div>

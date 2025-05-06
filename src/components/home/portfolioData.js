@@ -9,9 +9,9 @@ const projectsData = [
   {
     title: "Fraiche",
     description: "Sleek UI Restaurant App",
-    href: "https://frachemodern.netlify.app/",
+    href: "https://restaurant-app-five-beta.vercel.app/",
     image: "/fraiche.png",
-    github: "https://github.com/EmmanuelUwem1/Fraiche-Restaurant-App-",
+    github: "https://github.com/EmmanuelUwem1/restaurant-app",
   },
   {
     title: "Graphic-Cheff",

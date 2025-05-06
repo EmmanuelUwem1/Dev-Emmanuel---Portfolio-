@@ -328,3 +328,38 @@ footer {
   transition: transform 0.1s ease;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 40px var(--theme-blue);
 }
+
+.card{
+  background-color: #1B1C3D;
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%; /* Start position off-screen */
+  width: 300%; /* Ensure wide coverage */
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  transform: skewX(-20deg); /* Slants the shimmer effect */
+  animation: shimmer-slide 3s linear infinite;
+}
+
+@keyframes shimmer-slide {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}

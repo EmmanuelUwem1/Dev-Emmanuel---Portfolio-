@@ -19,7 +19,7 @@ function Services() {
           impactful results
         </span>
       </h2>
-      <div className="flex gap-6 mt-20 w-full justify-center items-center lg:w-[80%] flex-wrap">
+      <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-20 w-full justify-center items-center lg:w-[95%]">
         {data.map((service, index) => (
           <motion.div
             initial={{ opacity: 0 }}
@@ -29,7 +29,7 @@ function Services() {
               delay: `${index == 0 ? 0.2 : Number(index) / 2}`,
             }}
             key={service.title}
-            className="flex flex-col w-80 bg-slate-800 rounded-2xl h-96 overflow-hidden px-4 pt-4 pb-6"
+            className="flex flex-col w-80 sm:w-full card rounded-2xl h-96 overflow-hidden px-4 pt-4 pb-6"
           >
             <span className="relative h-[70%] opacity-80">
               <Image

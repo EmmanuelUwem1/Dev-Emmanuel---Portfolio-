@@ -5,6 +5,7 @@ const myStackData = [
     { title: "JavaScript", icon: "/javascript.png", text: "" },
     { title: "React Js", icon: "/react.png", text: "" },
     { title: "Next Js", icon: "/nextjs.png", text: "" },
+    { title: "Angular", icon: "/angular.png", text: "" },
     
 ];
 export default myStackData;
