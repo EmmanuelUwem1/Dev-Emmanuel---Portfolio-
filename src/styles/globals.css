@@ -146,21 +146,23 @@ main {
   padding-top: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 2rem;
-  justify-content: start;
+  padding-bottom: 3rem;
   align-items: center;
   gap: 1.5rem;
   position: fixed;
   height: calc(100svh);
   top: 0;
-  width: 100svw;
+  width: 100%;
   background-color: var(--sectionBG);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   opacity: 0;
   right: 0;
   transition: all 0.7s ease;
   z-index: 1000;
   pointer-events: none;
   transform: translateX(100%);
+  border-radius: 1rem;
 }
 
 .side-nav.open {

@@ -9,8 +9,7 @@ const socialsData = [
     href: "https://discord.gg/h3v4DPU7xH",
     icon: "/discord.png",
   },
-  { title: "Telegram", href: "t.me/emma_de_dev", icon: "/telegram.png" },
-  { title: "X", href: "https://x.com/EmmanuelUwem08", icon: "/x.png" },
+  { title: "X", href: "https://x.com/EmmanuelUwem8", icon: "/x.png" },
   {
     title: "WhatsApp",
     href: "https://wa.me/message/GXR3OFBVV4U6J1",
@@ -18,7 +17,7 @@ const socialsData = [
   },
   {
     title: "LinkedIn",
-    href: "https://wa.me/message/GXR3OFBVV4U6J1",
+    href: "https://www.linkedin.com/in/emmanuel-uwem-4892942b6/",
     icon: "/linkedin.png",
   },
 ];

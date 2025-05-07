@@ -17,7 +17,7 @@ function Portfolio() {
 
       <h2 className="montserrat-normal font-bold text-4xl text-center opacity-90 w-full md:w-[90%]">
         <span className="text-gradient montserrat-normal font-bold md:text-4xl text-2xl text-transparent">
-          Some of my Projects
+          Some of my Works
         </span>
       </h2>
 

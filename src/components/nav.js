@@ -1,13 +1,11 @@
 "use client";
 
-import { Variants } from "motion/react";
 import * as motion from "motion/react-client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import React from "react";
 import Link from "next/link";
 import Socials from "./socials";
-import { delay } from "motion";
 
 const sidebarVariants = {
   open: {
@@ -99,34 +97,31 @@ function Nav(props) {
         animate={props.state ? "open" : "closed"}
         ref={containerRef}
         variants={sidebarVariants}
-        className={`side-nav flex justify-start ${props.state ? "open" : ""}`}
+        className={`side-nav flex justify-between ${props.state ? "open" : ""}`}
       >
-        <a
-          href="mailto: emmanueluwem560@gmail.com"
-          className="hire"
-       
-  
-        >
+        <a href="mailto: emmanueluwem560@gmail.com" className="hire">
           Hire Me
         </a>
-        {navlinks.map((link, index) => (
-          <motion.div key={link.title} variants={navLinkVariants(index)}>
-            <Link
-              href={link.href}
-              className={`${
-                location == link.href
-                  ? "active-link side-nav-link"
-                  : "side-nav-link"
-              }`}
-              onClick={() => {
-                setLocation(link.href);
-                props.onClick();
-              }}
-            >
-              {link.title}
-            </Link>
-          </motion.div>
-        ))}
+        <div className="flex justify-center flex-col gap-4 sm:gap-8 lg:gap-4 relative -top-14 items-center">
+          {navlinks.map((link, index) => (
+            <motion.div key={link.title} variants={navLinkVariants(index)}>
+              <Link
+                href={link.href}
+                className={`${
+                  location == link.href
+                    ? "active-link side-nav-link"
+                    : "side-nav-link"
+                }`}
+                onClick={() => {
+                  setLocation(link.href);
+                  props.onClick();
+                }}
+              >
+                {link.title}
+              </Link>
+            </motion.div>
+          ))}
+        </div>
         <motion.div
           className="flex w-[80%] relative md:w-[40%] pt-6"
           variants={socialsVariants}

@@ -55,7 +55,7 @@ function Hero() {
         ))}
       </span>
 
-      <div className="flex my-4 justify-center items-center border rounded-2xl px-3 py-2 font-semibold text-xl opacity-90 text-gradient">
+      <div className="flex my-4 justify-center items-center border rounded-2xl px-3 py-2 font-semibold text-xl sm:text-2xl opacity-90 text-gradient">
         <Typewriter
           options={{
             strings: [
@@ -69,7 +69,7 @@ function Hero() {
           }}
         />
       </div>
-      <div className="text-xl opacity-55 w-full text-center md:w-[70%] turret-road-regular montserrat-normal">
+      <div className="text-lg opacity-65 w-full text-center md:w-[70%] turret-road-regular montserrat-normal">
         {width > limit
           ? `Building digital products, enhancing brands, and creating beautiful
           user experiences. Bringing creativity, precision, and technical excellence to every
