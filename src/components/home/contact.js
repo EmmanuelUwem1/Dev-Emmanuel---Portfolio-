@@ -10,7 +10,7 @@ function Contact() {
 
       <div className="flex flex-col w-full justify-center items-center">
         <h2 className="montserrat-normal font-bold text-2xl md:text-4xl text-center opacity-90 w-[90%] md:w-[80%]">
-          {`I'll be Glad to work with you on your project`}
+          {`I'd be Glad to work with you`}
         </h2>
         <span className="flex relative h-44 w-48 opacity-80">
           <Image

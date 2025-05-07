@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
+import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -54,8 +54,20 @@ function Hero() {
           </motion.span>
         ))}
       </span>
+
       <div className="flex my-4 justify-center items-center border rounded-2xl px-3 py-2 font-semibold text-xl opacity-90 text-gradient">
-        Frontend Engineer
+        <Typewriter
+          options={{
+            strings: [
+              "Frontend Engineer",
+              "Frontend Developer",
+              "Web Developer",
+              "Incoming Software Engineer",
+            ],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </div>
       <div className="text-xl opacity-55 w-full text-center md:w-[70%] turret-road-regular montserrat-normal">
         {width > limit
