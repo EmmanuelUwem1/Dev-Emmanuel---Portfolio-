@@ -1,14 +1,53 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import projectsData from "./portfolioData";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from 'framer-motion'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function Portfolio() {
-  const projects = projectsData.slice(0);
+  gsap.registerPlugin(ScrollTrigger);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const items = document.querySelectorAll(".project-card");
+
+    // Pin the section
+    ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: "top top",
+      end: () => `+=${window.innerHeight * items.length}`,
+      pin: true,
+    });
+
+    // Animate each item one at a time
+    items.forEach((item, index) => {
+      gsap.fromTo(
+        item,
+        { opacity: 0, y: 100, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: item,
+            start: "top center",
+            end: "top center",
+            toggleActions: "play none none reverse",
+            scrub: true,
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <section
-      className="px-4 flex flex-col items-center justify-start md:px-20 py-20 md:pt-28 b-rounded-bottom overflow-hidden relative mesh-gradient"
+      ref={containerRef}
+      className="px-4 flex flex-col gap-6 justify-center items-center h-fit w-full mt-28 flex-wrap md:flex-nowrap overflow-hidden relative mesh-gradient"
       id="portfolio"
     >
       <span className="text-sm montserrat-normal md:top-16 md:left-4 top-8 left-0 w-32 flex justify-center items-center text-justify border-2 border-transparent rounded-full px-1 py-2 bg-slate-800">
@@ -21,31 +60,28 @@ function Portfolio() {
         </span>
       </h2>
 
-      <div className="flex flex-row gap-6 justify-center items-center h-full w-full mt-28 flex-wrap md:flex-nowrap">
-        {projects.map((project,index) => (
-          <motion.div
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: .5, delay:`${index == 0 ? .2 : (Number(index)/2)}` }}
-            
-            target="_blank"
-            href={project.href}
+      <div className="flex flex-row gap-6 justify-center items-center h-fit w-full mt-28 flex-wrap md:flex-nowrap">
+        {projectsData.map((project) => (
+          <div
             key={project.title}
-            className="project-card flex flex-col justify-between   card rounded-2xl w-fit h-64 overflow-hidden p-4 relative "
+            className="project-card flex flex-col justify-between card rounded-2xl w-fit h-64 overflow-hidden p-4 relative opacity-0 transform translate-y-20"
           >
             <span className="relative h-full bg-slate-800 overflow-hidden rounded-lg z-[200]">
               <Image
                 alt={project.title}
                 src={project.image}
-                // layout="fill"
                 width={320}
                 height={240}
                 className="rounded-lg"
-              ></Image>
+              />
             </span>
             <div className="absolute bottom-[30%] flex w-full flex-col gap-1 justify-center items-start">
-              <span className="montserrat-normal font-bold opacity-90 ">{project.title}</span>
-              <span className="montserrat-normal font-normal text-base opacity-80">{ project.description}</span>
+              <span className="montserrat-normal font-bold opacity-90 ">
+                {project.title}
+              </span>
+              <span className="montserrat-normal font-normal text-base opacity-80">
+                {project.description}
+              </span>
             </div>
             <div className="flex justify-center items-center gap-8 w-full h-8 absolute bottom-6 left-0 z-[1]">
               <a
@@ -63,7 +99,7 @@ function Portfolio() {
                 Live Demo
               </a>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
       <div className="pt-4">
