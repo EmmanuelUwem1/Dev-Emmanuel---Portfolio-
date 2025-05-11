@@ -14,7 +14,7 @@ function MyStack() {
         pauseOnHover={false}
         pauseOnClick={false}
         direction="right"
-        speed={40}
+        speed={100}
         loop={0}
         autoFill={true}
         gradient={true}

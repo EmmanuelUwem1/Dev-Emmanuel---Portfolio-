@@ -5,10 +5,17 @@
 :root {
   --background: #010008;
   --background2: #02000f;
-  --foreground: #ededed;
-  --sectionBG: #03001a;
-  --headerHeight: 7rem;
   --theme-blue: #689dff; /* Add theme blue color */
+  --sectionBG: #03001a;
+  --foreground: #ededed;
+  --headerHeight: 7rem;
+
+   /* New accents */
+   --gold-accent: #FFD700;
+   --purple-accent: #8A2BE2;
+   --teal-accent: #00B7FF;
+   --silver-accent: #C0C0C0;
+   --crimson-accent: #7D021F;
 }
 
 /* Firefox */
@@ -364,4 +371,30 @@ footer {
   100% {
     left: 150%;
   }
+}
+
+
+@keyframes borderAnimation {
+  0% { border-color: var(--theme-blue); }  /* Soft Blue */
+  25% { border-color: var(--gold-accent); } /* Rich Gold */
+  50% { border-color: var(--purple-accent); } /* Electric Purple */
+  75% { border-color: var(--teal-accent); } /* Vibrant Teal */
+  100% { border-color: var(--theme-blue); } /* Looping back to Theme Blue */
+}
+
+/* @keyframes rotateAnimation {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(1.5deg); }
+  100% { transform: rotate(0deg); }
+} */
+
+.animated-border {
+  animation: borderAnimation 3s linear infinite, rotateAnimation 5s ease-in-out infinite;
+  border-width: 1px;
+}
+.project-card{
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: #4b4b7a3a;
+
 }
