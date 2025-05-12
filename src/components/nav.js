@@ -121,6 +121,16 @@ function Nav(props) {
               </Link>
             </motion.div>
           ))}
+          {/* <motion.a
+            initial={{ opacity: 0 }}
+            transition={{duration:0.5, delay:0.7}}
+            whileInView={{opacity: 1}}
+                className="side-nav-link"
+                href="Emmanuel Uwem Frontend Developer CV.pdf"
+                download
+              >
+                Resume
+              </motion.a> */}
         </div>
         <motion.div
           className="flex w-[80%] relative md:w-[40%] pt-6"

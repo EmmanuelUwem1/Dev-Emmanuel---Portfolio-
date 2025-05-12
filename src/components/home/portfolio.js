@@ -1,57 +1,15 @@
 "use client";
-import React, { useEffect, useRef } from "react";
 import projectsData from "./portfolioData";
 import Image from "next/image";
 import Link from "next/link";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Marquee from "react-fast-marquee";
+
 
 function Portfolio() {
-  // gsap.registerPlugin(ScrollTrigger);
-  // const containerRef = useRef(null);
-
-  // useEffect(() => {
-  //   const items = document.querySelectorAll(".project-card");
-
-  
-
-  //   // Mobile-specific animation
-  //   if (window.innerWidth > 768) {
-     
-
-  //     // Pin the portfolio section
-  //     ScrollTrigger.create({
-  //       trigger: containerRef.current,
-  //       start: "top top",
-  //       end: () => `+=${window.innerHeight * items.length}`,
-  //       pin: true,
-  //     });
-  //     // Desktop animation (original)
-  //     items.forEach((item, index) => {
-  //       gsap.fromTo(
-  //         item,
-  //         { height: "20rem", opacity: 0, y: 100 },
-  //         {
-  //           height: "30rem",
-  //           opacity: 1,
-  //           y: 0,
-  //           duration: 0.5,
-  //           ease: "power2.out",
-  //           scrollTrigger: {
-  //             trigger: item,
-  //             start: `top+=${index * window.innerHeight * 0.4} center`, // Dynamically adjust spacing based on viewport height
-  //             end: "bottom center",
-  //             toggleActions: "play none none reverse", // Prevents all items from animating together
-  //           },
-  //         }
-  //       );
-  //     });
-  //   }
-  // }, []);
+ 
 
   return (
     <section
-      // ref={containerRef}
       className="px-4 py-8 flex flex-col gap-6 md:justify-center justify-start items-center min-h-screen w-full mt-28 flex-wrap md:flex-nowrap overflow-hidden mesh-gradient relative"
       id="portfolio"
     >
@@ -65,23 +23,23 @@ function Portfolio() {
         </span>
       </h2>
 
-      <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 relative items-center h-full w-full mt-0 ">
+      <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-6 relative calc-height w-fit mt-0 ">
         {projectsData.map((project) => (
-          <Link
-            href={project.href}
+          <div
             key={project.title}
-            className="project-card relative flex flex-col justify-between rounded-2xl w-fit opacity-1 overflow-hidden p-4 border-2 border-white transition-all animated-border"
+            className="project-card relative rounded-2xl w-fit overflow-hidden h-[17rem] opacity-1 p-4 border-2 border-white transition-all animated-border"
           >
-            <span className="relative h-fit bg-slate-800 overflow-hidden rounded-lg z-[200]">
+            <span className="relative block h-60 w-80 overflow-hidden rounded-lg z-[200]">
               <Image
                 alt={project.title}
                 src={project.image}
-                width={320}
-                height={240}
-                className="rounded-lg"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                className="rounded-lg overflow-hidden"
               />
             </span>
-            <div className="absolute flex w-full flex-col gap-1 justify-center items-start">
+            <div className="relative pt-6 flex w-full flex-col gap-1 justify-center items-start">
               <span className="montserrat-normal font-bold opacity-90 ">
                 {project.title}
               </span>
@@ -89,33 +47,60 @@ function Portfolio() {
                 {project.description}
               </span>
             </div>
-            {/* <div className="flex justify-center items-center gap-8 w-full h-8 absolute bottom-6 left-0 z-[1]">
+            <div className="relative pt-6 flex w-full gap-2 justify-start items-center">
+              <span className="montserrat-normal font-bold opacity-90 ">
+                Built with :
+              </span>
+              <div className="max-h-12 relative overflow-hidden">
+                  <Marquee
+                        play={true}
+                        pauseOnHover={false}
+                        pauseOnClick={false}
+                        direction="left"
+                        speed={70}
+                        loop={0}
+                        autoFill={true}
+                        gradient={true}
+                        gradientColor="#03001a"
+                        gradientWidth={10}
+                        className="flex w-full flex-nowrap justify-between"
+                      >
+                        {project.stack.map((stack, index) => (
+                          <span key={index} className="relative flex h-8 w-8 items-center justify-center"><Image alt=" stack" src={stack}
+                            objectFit="contain"
+                            layout="fill"
+                          objectPosition="center"></Image></span>
+                        ))}
+                      </Marquee>
+              </div>
+            </div>
+            <div className="flex justify-start items-center gap-8 w-full h-8 relative py-6">
               <a
                 href={project.github}
                 target="_blank"
-                className="px-6 py-2 rounded-full bg-white text-black text-opacity-80 text-base font-semibold montserrat-normal flex justify-center items-center transition-all hover:bg-slate-600"
+                className="px-6 py-2 rounded-full bg-white opacity-80 text-black text-opacity-80 text-base font-semibold montserrat-normal flex justify-center items-center transition-all hover:bg-slate-600"
               >
                 GitHub
               </a>
               <a
                 href={project.href}
                 target="_blank"
-                className="px-6 py-2 rounded-full border-2 border-white text-white text-opacity-80 text-base font-semibold montserrat-normal flex justify-center items-center transition-all hover:bg-slate-600"
+                className="px-6 py-2 rounded-full border border-white text-white text-opacity-80 text-base font-semibold montserrat-normal flex justify-center items-center transition-all hover:bg-slate-600"
               >
                 Live Demo
               </a>
-            </div> */}
-          </Link>
+            </div>
+          </div>
         ))}
       </div>
-      {/* <div className="pt-4">
+      <div className="pt-4">
         <Link
           href="/portfolio"
           className="px-10 py-3 mt-8 rounded-full bg-white text-black text-opacity-80 text-base font-semibold montserrat-normal flex justify-center items-center transition-all hover:bg-slate-600"
         >
           See More
         </Link>
-      </div> */}
+      </div>
     </section>
   );
 }
