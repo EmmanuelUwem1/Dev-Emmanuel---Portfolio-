@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="antialiased">
         <Header />
-        <main className="overflow-hidden">{children}</main>
+        <main className="overflow-hidden min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

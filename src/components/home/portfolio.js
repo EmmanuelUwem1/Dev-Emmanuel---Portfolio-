@@ -2,7 +2,6 @@
 import projectsData from "./portfolioData";
 import Image from "next/image";
 import Link from "next/link";
-import Marquee from "react-fast-marquee";
 
 
 function Portfolio() {
@@ -27,7 +26,7 @@ function Portfolio() {
         {projectsData.map((project) => (
           <div
             key={project.title}
-            className="project-card relative rounded-2xl w-fit overflow-hidden h-[17rem] opacity-1 p-4 border-2 border-white transition-all animated-border"
+            className="project-card relative rounded-2xl w-full overflow-hidden h-[17rem] opacity-1 p-4 border-2 border-white transition-all animated-border"
           >
             <span className="relative block h-60 w-80 overflow-hidden rounded-lg z-[200]">
               <Image
@@ -39,39 +38,33 @@ function Portfolio() {
                 className="rounded-lg overflow-hidden"
               />
             </span>
-            <div className="relative pt-6 flex w-full flex-col gap-1 justify-center items-start">
+            <div className="relative pt-3 flex flex-col gap-1 justify-center items-start w-80">
               <span className="montserrat-normal font-bold opacity-90 ">
                 {project.title}
               </span>
-              <span className="montserrat-normal font-normal text-base opacity-80">
+              <span className="montserrat-normal font-normal  opacity-60 text-xs">
                 {project.description}
               </span>
             </div>
-            <div className="relative pt-6 flex w-full gap-2 justify-start items-center">
-              <span className="montserrat-normal font-bold opacity-90 ">
+            <div className="relative pt-3 flex w-80 gap-2 justify-start items-center">
+              <span className="montserrat-normal text-sm font-bold opacity-90 ">
                 Built with :
               </span>
-              <div className="max-h-12 relative overflow-hidden">
-                  <Marquee
-                        play={true}
-                        pauseOnHover={false}
-                        pauseOnClick={false}
-                        direction="left"
-                        speed={70}
-                        loop={0}
-                        autoFill={true}
-                        gradient={true}
-                        gradientColor="#03001a"
-                        gradientWidth={10}
-                        className="flex w-full flex-nowrap justify-between"
-                      >
-                        {project.stack.map((stack, index) => (
-                          <span key={index} className="relative flex h-8 w-8 items-center justify-center"><Image alt=" stack" src={stack}
-                            objectFit="contain"
-                            layout="fill"
-                          objectPosition="center"></Image></span>
-                        ))}
-                      </Marquee>
+              <div className="max-h-12 opacity-80 my-2 flex relative overflow-hidden gap-2 rounded-full bg-[#4b4b7a3a] px-3 py-2">
+                {project.stack.map((stack, index) => (
+                  <span
+                    key={index}
+                    className="relative flex h-6 w-6 items-center justify-center"
+                  >
+                    <Image
+                      alt=" stack"
+                      src={stack}
+                      objectFit="contain"
+                      layout="fill"
+                      objectPosition="center"
+                    ></Image>
+                  </span>
+                ))}
               </div>
             </div>
             <div className="flex justify-start items-center gap-8 w-full h-8 relative py-6">
