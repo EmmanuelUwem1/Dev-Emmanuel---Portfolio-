@@ -52,7 +52,7 @@ function Portfolio() {
   return (
     <section
       // ref={containerRef}
-      className="px-4 py-8 flex flex-col gap-6 md:justify-center justify-start items-center h-screen w-full mt-28 flex-wrap md:flex-nowrap overflow-hidden mesh-gradient relative"
+      className="px-4 py-8 flex flex-col gap-6 md:justify-center justify-start items-center min-h-screen w-full mt-28 flex-wrap md:flex-nowrap overflow-hidden mesh-gradient relative"
       id="portfolio"
     >
       <span className="text-sm montserrat-normal md:top-16 md:left-4 top-8 left-0 w-32 flex justify-center items-center text-justify border-2 border-transparent rounded-full px-1 py-2 bg-slate-800">
@@ -70,7 +70,7 @@ function Portfolio() {
           <Link
             href={project.href}
             key={project.title}
-            className="project-card relative flex flex-col justify-between rounded-2xl h-fit opacity-1 overflow-hidden p-4 border-2 border-white transition-all animated-border"
+            className="project-card relative flex flex-col justify-between rounded-2xl w-fit opacity-1 overflow-hidden p-4 border-2 border-white transition-all animated-border"
           >
             <span className="relative h-fit bg-slate-800 overflow-hidden rounded-lg z-[200]">
               <Image
@@ -89,7 +89,7 @@ function Portfolio() {
                 {project.description}
               </span>
             </div>
-            <div className="flex justify-center items-center gap-8 w-full h-8 absolute bottom-6 left-0 z-[1]">
+            {/* <div className="flex justify-center items-center gap-8 w-full h-8 absolute bottom-6 left-0 z-[1]">
               <a
                 href={project.github}
                 target="_blank"
@@ -104,7 +104,7 @@ function Portfolio() {
               >
                 Live Demo
               </a>
-            </div>
+            </div> */}
           </Link>
         ))}
       </div>
