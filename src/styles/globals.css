@@ -392,9 +392,9 @@ footer {
   animation: borderAnimation 3s linear infinite, rotateAnimation 5s ease-in-out infinite;
   border-width: 1px;
 }
-.project-card{
+/* .project-card{
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   background-color: #4b4b7a3a;
 
-}
+} */
