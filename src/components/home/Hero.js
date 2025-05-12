@@ -55,7 +55,7 @@ function Hero() {
         ))}
       </span>
 
-      <div className="flex my-4 justify-center items-center border rounded-2xl px-3 py-2 font-semibold text-xl sm:text-2xl opacity-90 text-gradient">
+      <div className="flex my-4 justify-center items-center border rounded-2xl px-3 py-2 font-semibold text-2xl opacity-90 text-gradient">
         <Typewriter
           options={{
             strings: [
