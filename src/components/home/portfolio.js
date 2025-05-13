@@ -11,7 +11,7 @@ function Portfolio() {
 
   return (
     <section
-      className="px-4 py-8 flex flex-col gap-6 md:justify-center justify-start items-center min-h-screen w-full mt-28 flex-wrap md:flex-nowrap overflow-hidden mesh-gradient relative"
+      className="px-4 py-8 flex flex-col gap-6 md:justify-center transition-class justify-start items-center min-h-screen w-full mt-28 flex-wrap md:flex-nowrap overflow-hidden mesh-gradient relative"
       id="portfolio"
     >
       <span className="text-sm montserrat-normal md:top-16 md:left-4 top-8 left-0 w-32 flex justify-center items-center text-justify border-2 border-transparent rounded-full px-1 py-2 bg-slate-800">
