@@ -1,3 +1,40 @@
+# Dev-Emmanuel Portfolio 🚀
+
+Welcome to **Dev-Emmanuel Portfolio**, a sleek and dynamic personal website built with **Next.js** and enhanced with **Framer Motion** animations to showcase projects, skills, and experiences in an engaging way.
+
+## ✨ Features
+
+- 🎨 **Modern UI & Responsive Design**  
+  - Built with **Next.js** for fast, optimized performance.
+  - Fully responsive, ensuring a smooth experience on all devices.
+
+- 🎬 **Framer Motion Animations**  
+  - Smooth page transitions and interactive elements.
+  - Engaging hover effects and motion-based animations.
+
+- 📂 **Projects & Work Showcase**  
+  - Display personal and professional projects in an elegant layout.
+  - Detailed project pages with tech stack, description, and links.
+
+- 📞 **Contact Section**  
+  - Social media links for easy networking.
+
+## 🛠 Tech Stack
+
+- **Next.js** – Fast and efficient React framework.
+- **Framer Motion** – Powerful animation library for a dynamic UI.
+- **Tailwind CSS** – Utility-first styling for sleek design.
+
+
+## 🚀 Installation & Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Dev-Emmanuel---Portfolio-.git
+   cd Dev-Emmanuel---Portfolio-
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
