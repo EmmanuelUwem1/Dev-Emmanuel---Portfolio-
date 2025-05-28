@@ -36,7 +36,7 @@ function Portfolio() {
             key={project.title}
             className="project-card relative rounded-2xl w-full overflow-hidden opacity-1 p-4 border-2 border-white transition-all animated-border"
           >
-            <span className="relative block h-60 w-80 overflow-hidden rounded-lg z-[200]">
+            <span className="relative block h-52 w-80 overflow-hidden rounded-lg z-[200]">
               <Image
                 alt={project.title}
                 src={project.image}
@@ -113,8 +113,8 @@ function Portfolio() {
                 src={project.image}
                 layout="fill"
                 objectFit="cover"
-                objectPosition="center"
-                className="rounded-lg overflow-hidden"
+                objectPosition="top"
+                className="rounded-lg"
               />
             </span>
             <div className="relative pt-3 flex flex-col gap-1 justify-center items-start w-80">
