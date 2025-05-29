@@ -56,7 +56,7 @@ const projectsData = [
   {
     title: "Graphic-Cheff",
     description:
-      "A dynamic portfolio website  using Nextjs, Integrated Animations and interactive elements to showcase the designer's work using Framer motion and swiper js Ensured cross-browser compatibility and optimized the website for performance",
+      "A dynamic portfolio website  using Nextjs, Integrated Animations and interactive elements to showcase the designer's work using Framer motion and swiper js.",
     href: "https://graphic-cheff.vercel.app/",
     image: "/graphic-cheff.png",
     github: "https://github.com/EmmanuelUwem1/graphic-cheff",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import HamburgerMenu from "./hamburgerMenu";
 import Nav from "./nav";
+import Image from "next/image";
 
 function Header() {
   const [HamMenuIsOpen, setHamMenu] = useState(false);
@@ -28,6 +29,14 @@ function Header() {
   function handleNavLinkClick() {
     setHamMenu(false); // Close the menu when a nav link is clicked
   }
+  const github = [
+    {
+      title: "GitHub",
+      href: "https://github.com/EmmanuelUwem1",
+      icon: "/github.png",
+    },
+  ];
+  const social = github[0];
 
   return (
     <header
@@ -43,7 +52,17 @@ function Header() {
         </div>
       </Link>
       <Nav state={HamMenuIsOpen} onClick={handleNavLinkClick} />
-      <HamburgerMenu state={HamMenuIsOpen} onClick={HandleHamMenu} />
+      <div className="flex justify-center items-center gap-3 ">
+        <a
+                  href={social.href}
+                  target="_blank"
+                  className="flex relative h-6 w-6 overflow-hidden hover:bg-slate-800 transition-all p-4 rounded-full"
+                  key={social.title}
+                >
+                  <Image alt={social.title} src={social.icon} layout="fill" objectPosition="center" objectFit="contain"></Image>
+                </a>
+        <HamburgerMenu state={HamMenuIsOpen} onClick={HandleHamMenu} />
+      </div>
     </header>
   );
 }
