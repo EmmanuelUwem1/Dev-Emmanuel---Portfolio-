@@ -11,7 +11,7 @@ const servicesData = [
   },
   {
     title: "Development",
-    text: `Transforming your ideas into reality using cutting-edge technology and modern design principles.`,
+    text: `Transforming ideas into reality using cutting-edge technology and modern design principles.`,
     illustration: `/mobile-phone.gif`,
   },
 ];
