@@ -9,6 +9,15 @@ const projectsData = [
     stack: ["/next-icon.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
   },
   {
+    title: "Taget Website",
+    description:
+      "Website for Taget web3 community for learning, networking, and innovation in DAOs.",
+    href: "https://taget-nine.vercel.app/",
+    image: "/taget.png",
+    github: "https://github.com/EmmanuelUwem1/taget",
+    stack: ["/react.png","/vite.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
+  },
+  {
     title: "Sonic Wall",
     description:
       "A cutting-edge dashboard for a smart contract firewall, built on Sonic",
