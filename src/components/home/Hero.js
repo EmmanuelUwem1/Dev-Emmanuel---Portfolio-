@@ -60,9 +60,8 @@ function Hero() {
           options={{
             strings: [
               "Frontend Engineer",
-              "Frontend Developer",
-              "Web Developer",
-              "Incoming Software Engineer",
+              
+              "Software Engineer on the rise",
             ],
             autoStart: true,
             loop: true,
