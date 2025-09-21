@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Explore the portfolio of a visionary front-end developer, where creativity meets cutting-edge technology. Discover innovative web designs, seamless user experiences, and a mastery of HTML, CSS, JavaScript, and React. Elevate your digital presence with a developer who transforms ideas into interactive art, delivering exceptional results that captivate and inspire."
+          content="Discover the portfolio of a creative front-end developer blending design and technology. Explore sleek web interfaces, smooth user experiences, and expert skills in HTML, CSS, JavaScript, and React"
         />
         <meta
           name="keywords"
@@ -86,7 +86,7 @@ export default function RootLayout({ children }) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <title>Dev Emmanuel || Portfolio</title>
+        <title>Emmanuel Uwem Software Engineer Portfolio website</title>
         <style jsx global>{`
           :root {
             --bungee-hairline: ${bungeeHairline.style.fontFamily};

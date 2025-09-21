@@ -2,7 +2,7 @@ const projectsData = [
   {
     title: "Volunteer Hub",
     description:
-      "A modern web application designed to help users browse, filter, and manage volunteer opportunities seamlessly.",
+      "A user-friendly web app for exploring and managing volunteer opportunities with ease.",
     href: "https://volunteer-hub-iota.vercel.app/",
     image: "/volunteer-hub.png",
     github: "https://github.com/EmmanuelUwem1/volunteer-hub",
@@ -11,11 +11,16 @@ const projectsData = [
   {
     title: "Taget Website",
     description:
-      "Website for Taget web3 community for learning, networking, and innovation in DAOs.",
+      "A website for Taget, a Web3 community focused on learning, networking, and driving innovation in DAOs.",
     href: "https://taget-nine.vercel.app/",
     image: "/taget.png",
     github: "https://github.com/EmmanuelUwem1/taget",
-    stack: ["/react.png","/vite.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
+    stack: [
+      "/react.png",
+      "/vite.png",
+      "/tailwind-icon.png",
+      "/framer-motion-icon.png",
+    ],
   },
   {
     title: "Sonic Wall",
@@ -29,7 +34,7 @@ const projectsData = [
   {
     title: "Nuevotek",
     description:
-      "A professional website for a network infrastructure company using Nextjs, Tailwind for styles and framer motion for smooth UI animations.",
+      "A clean and modern website for a network infrastructure company, built with Next.js and styled using Tailwind CSS. Smooth animations are powered by Framer Motion to enhance the user experience.",
     href: "https://www.nuevotek.ng/",
     image: "/nuevotek.png",
     github: "https://github.com/EmmanuelUwem1/nuevotek",
@@ -38,16 +43,16 @@ const projectsData = [
   {
     title: "Fraiche Restaurant App",
     description:
-      "A sleek and responsive restaurant web application using Angular and Tailwind CSS. Utilized Angular services to manage application state, handle cart logic, and track user activities seamlessly across the app. Integrated a test Paystack payment gateway to simulate secure checkout and transaction processes.",
+      "A sleek and responsive restaurant web application built with Angular and Tailwind CSS. Featuring smooth cart management, user activity tracking, and a test Paystack integration for simulating secure checkout.",
     href: "https://restaurant-app-five-beta.vercel.app/",
     image: "/fraiche.png",
     github: "https://github.com/EmmanuelUwem1/restaurant-app",
     stack: ["/angular-icon.png", "/tailwind-icon.png", "/gsap-icon.png"],
   },
   {
-    title: "Destorah E-commerce",
+    title: "Destorah E-commerce frontend",
     description:
-      "A modern e-commerce platform designed for seamless online grocery shopping.",
+      "Modern e-commerce platform offering a curated selection of processed farm products.",
     href: "https://destorah-ecommerce.vercel.app/",
     image: "/destorah.png",
     github: "https://github.com/EmmanuelUwem1/destorah-ecommerce",
@@ -56,7 +61,7 @@ const projectsData = [
   {
     title: "Postman on Campus",
     description:
-      "A web platform providing information about Postman, APIs, and opportunities for students to join the community",
+      "Postman student community platform for API education and collaboration, ",
     href: "https://postman-campus.vercel.app/",
     image: "/postman.png",
     github: "https://github.com/EmmanuelUwem1/postman-on-campus",
@@ -65,7 +70,7 @@ const projectsData = [
   {
     title: "Graphic-Cheff",
     description:
-      "A dynamic portfolio website  using Nextjs, Integrated Animations and interactive elements to showcase the designer's work using Framer motion and swiper js.",
+      "A dynamic portfolio site built with Next.js, featuring smooth animations and interactive showcases using Framer Motion and Swiper.js.",
     href: "https://graphic-cheff.vercel.app/",
     image: "/graphic-cheff.png",
     github: "https://github.com/EmmanuelUwem1/graphic-cheff",
@@ -74,7 +79,7 @@ const projectsData = [
   {
     title: "Dev Emmanuel - My Portfolio ",
     description:
-      "My portfolio website elegantly built using Nextjs, Integrated Animations using Framer motion and react marquee, delivering an interactive and visually appealing experience",
+      "My sleek portfolio website built with Next.js, featuring smooth animations via Framer Motion and React Marquee for an engaging user experience.",
     href: "https://dev-emmanuel.vercel.app",
     image: "/my-portfolio.png",
     github: "https://github.com/EmmanuelUwem1/Dev-Emmanuel---Portfolio-",
