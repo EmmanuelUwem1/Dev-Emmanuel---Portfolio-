@@ -61,7 +61,8 @@ function Hero() {
             strings: [
               "Frontend Engineer",
               
-              "Software Engineer on the rise",
+              "Software Engineer",
+              "Digital Product Developer",
             ],
             autoStart: true,
             loop: true,
