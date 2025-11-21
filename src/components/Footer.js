@@ -14,7 +14,7 @@ function Footer() {
           </div>
         </Link>{" "}
       </span>
-      <span className="text-sm">Built with &#128153; from Nigeria</span>
+      <span className="text-sm">Built with &#128153; from Akwa-Ibom</span>
     </footer>
   );
 }
